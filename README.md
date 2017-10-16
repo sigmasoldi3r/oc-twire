@@ -1,2 +1,7 @@
-# oc-twire
-Twire (Testing Wire) is a small suite of unit testing for OpenComputers
+# Twire
+Testing Wire
+
+### What is twire?
+Twire is a small suite of unit testing for [https://oc.cil.li/](OpenComputers)
+
+![docs/twire-v1-0-0.png](twire in action)
