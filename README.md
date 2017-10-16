@@ -32,3 +32,6 @@ end);
 - [ ] Add a module that exposes directly functions to global scope
 - [ ] More asserts
 - [ ] Document the API
+- [ ] Count the delay of the tests and warn about it
+- [ ] Count the total of specs that passed or failed
+- [ ] Exit non zero if some spec fails (Ideal for test runners)
