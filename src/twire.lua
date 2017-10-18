@@ -78,7 +78,8 @@ function twire.assert.notEquals(a, b)
 end
 
 function twire.assert.notThrow(fn)
-  assert(pcall(fn), tostring(fn) .. ' thrown an exception!');
+  local ok, err = pcall(fn);
+  assert(ok, tostring(fn) .. ' thrown an exception!\n           Thrown: ' .. tostring(err));
 end
 
 function twire.assert.greaterThan(a, b)
@@ -102,7 +103,7 @@ function twire.assert.notNull(value)
 end
 
 function twire.assert.null(value)
-  assert(value == nil, 'value is not null!');
+  assert(value == nil, 'value is not null!\n           Value: ' .. tostring(value));
 end
 
 function twire.assert.isTrue(value)
